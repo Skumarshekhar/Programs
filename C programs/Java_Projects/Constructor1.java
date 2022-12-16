@@ -1,5 +1,3 @@
-import javax.sound.sampled.SourceDataLine;
-
 public class Constructor1 {
     String name;
     String clas;
