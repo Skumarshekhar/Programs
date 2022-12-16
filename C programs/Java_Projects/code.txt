@@ -1,0 +1,52 @@
+#include <stdio.h>
+
+int main(void) {
+  char input[100];
+  double result = 0;
+  char operation = '+';
+
+  do {
+    printf("Enter a mathematical expression: ");
+    scanf("%s", input);
+
+    if (input[0] == 'q') {
+      break;
+    }
+
+    double number;
+    sscanf(input, "%lf", &number);
+
+    switch (operation) {
+      case '+':
+        result += number;
+        break;
+      case '-':
+        result -= number;
+        break;
+      case '*':
+        result *= number;
+        break;
+      case '/':
+        result /= number;
+        break;
+      default:
+        result = number;
+        break;
+    }
+
+    printf("Current result: %lf\n", result);
+
+    char next_operation;
+    scanf(" %c", &next_operation);
+    if (next_operation == '=') {
+      break;
+    } else {
+      operation = next_operation;
+      continue;
+    }
+  } while (1);
+
+  printf("Final result: %lf\n", result);
+
+  return 0;
+}
