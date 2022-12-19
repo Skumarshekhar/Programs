@@ -6,6 +6,7 @@ int main(){
     cin>>l>>b;
     area=l*b;
     perimeter=2*(l+b);
+    system("cls");
     cout<<"Area of reactangle is = "<<area<<endl;
     cout<<"Perimeter of reactangle is = "<<perimeter<<endl;
     return 0;
