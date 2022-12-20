@@ -4,6 +4,9 @@
 int main(){
     int a,b,choice;
     int c;
+    char ch;
+    system("cls");
+    do{
     printf("Enter two numbers\n");
     scanf("%d%d",&a,&b);
     printf("Enter your choice\n");
@@ -15,23 +18,22 @@ int main(){
     case 1:
         c=a+b;
         printf("The sum of numbers is = %d\n",c);
-        break;
     case 2:
         c=a-b;
         printf("The difference of two numbers are = %d\n",c);
-        break;
     case 3:
         c=a*b;
-        printf("Munltiplication of numbers are = %d\n",c);
-        break;
+        printf("Multiplication of numbers are = %d\n",c);
     case 4:
         c=a/b;
         printf("After division of numbers result are = %d\n",c);
-        break;
     
     default:
-        break;
+        printf("Do you want to continue----(Y/N)");
+        fflush(stdin);
+        scanf("%c",&ch);
     }
+    } while(ch=='y'||ch=="Y");
     return 0;
     
     

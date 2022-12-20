@@ -1,5 +1,5 @@
 #include<iostream>
-#include<math.h>
+#include<cmath>
 using namespace std;
 int main(){
     int principal, rate, time;
@@ -11,7 +11,7 @@ int main(){
     cin>>rate;
     cout<<"Enter Time Period = ";
     cin>>time;
-    ci= principal*(pow((1+rate/100),time));
+    ci= principal*(pow(1+(rate/100.0),time));   //Typecasting is mandatory here in division part 
     system("cls");
     cout<<"Total Compound Interest is = "<<ci<<endl;
     return 0;
