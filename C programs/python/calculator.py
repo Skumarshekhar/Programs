@@ -1,3 +1,5 @@
+import os
+os.system("cls")
 def add(P,Q):
     return P + Q
 def substract(P,Q):

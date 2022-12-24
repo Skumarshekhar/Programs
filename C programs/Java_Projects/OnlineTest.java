@@ -179,7 +179,7 @@ class OnlineTest extends JFrame implements ActionListener
 	}
 	public static void main(String s[])
 	{
-		new OnlineTest("Online Test Of Java");
+		new OnlineTest("Online Test of Java");
 	}
 
 

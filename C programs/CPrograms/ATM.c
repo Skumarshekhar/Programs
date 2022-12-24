@@ -7,6 +7,7 @@ int main(){
     int bal[4] = {0,18,10000,500};
     int balance;
     char ans;
+    system("cls");
     printf("\nEnter your pin: ");
     scanf("%d",&in_pin);
     int hasMatched = 0;

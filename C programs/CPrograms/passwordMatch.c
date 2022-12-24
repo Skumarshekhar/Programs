@@ -2,6 +2,7 @@
 #include<conio.h>
 #include<stdlib.h>
 int main(){
+    system("cls");
     int set_password;
     int default_password=1234;
     printf("set your password");
