@@ -50,6 +50,21 @@ while True:
             print("Pihu: Goodbye! Have a nice day.")
             speak_text("Goodbye! Have a nice day.")
             break
+        elif "name" in text:
+            print("Your name is Sandip Kumar")
+            speak_text("Hello Mr. Sandip Kumar, How are you.")
+            break
+        elif "food" in text:
+            print("You should eat a healthy food")
+            speak_text("You should eat healthy food thats why you become a healthy person")
+            break
+        elif "tatti" in text:
+            print("Omprakash Kumar")
+            speak_text("Omprakash such me ")
+            break
+        elif "who" in text:
+            print("Pihu")
+            speak_text("I am Pihu, Your personal assistant")
         else:
             print("Pihu: Sorry, I didn't understand your request.")
             speak_text("Sorry, I didn't understand your request.")
