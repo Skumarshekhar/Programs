@@ -1,3 +1,4 @@
-C programs/C Codes/PrintTableWhileLoop.exe
-C programs/C Codes/PrintTableWhileLoop.c
-C programs/C Codes/PrintTableUsingForLoop.exe
+*.exe
+*.class
+*.json
+.gitignore

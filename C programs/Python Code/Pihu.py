@@ -34,6 +34,7 @@ while True:
     # Prompt the user to speak
     print("Pihu: What can I do for you?")
     speak_text("Hello I am Pihu, your personal assistant, What can I do for you?")
+    print("Listening")
 
     # Try to recognize the speech
     text = recognize_speech()
